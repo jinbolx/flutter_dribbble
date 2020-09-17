@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter_dribbble/config/urls.dart';
 
 DioUtl dioUtl = DioUtl();
 
@@ -10,7 +11,7 @@ class DioUtl {
   DioUtl._internal() {
     if(dio==null){
       dio=Dio();
-      dio.options.baseUrl="https://free-api.heweather.net";
+      dio.options.baseUrl=app_url;
       dio.options.connectTimeout = 60 * 1000;
       dio.options.sendTimeout = 60 * 1000;
       dio.options.receiveTimeout = 60 * 1000;

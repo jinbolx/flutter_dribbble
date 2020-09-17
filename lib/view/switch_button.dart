@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class SwitchButton extends StatefulWidget {
   final Key key;
-  Function(bool) onChanged;
+ final Function(bool) onChanged;
 
   SwitchButton(this.key, {@required this.onChanged});
 

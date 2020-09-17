@@ -12,7 +12,7 @@ class CookiesUtils {
     String cookiePath = directory.path + "/.cookies/";
     print("cookiePath=" + cookiePath);
     var cookieJar = PersistCookieJar(dir: cookiePath);
-    List<Cookie> cookies = cookieJar.loadForRequest(Uri.parse(Urls.app_url));
+    List<Cookie> cookies = cookieJar.loadForRequest(Uri.parse(app_url));
     print("cookies: " + cookies.toString());
     return cookieJar;
   }
@@ -33,7 +33,7 @@ class CookiesUtils {
   }
 
   static String getEntUser() {
-    List<Cookie> list = getCookies(Urls.app_url);
+    List<Cookie> list = getCookies(app_url);
     for (int i = 0; i < list.length; i++) {
       if ("ENTUSER" == list[i].name) {
         return list[i].value.toString();
@@ -43,7 +43,7 @@ class CookiesUtils {
   }
 
   static String getPHPSESSID() {
-    List<Cookie> list = getCookies(Urls.app_url);
+    List<Cookie> list = getCookies(app_url);
     for (int i = 0; i < list.length; i++) {
       if ("PHPSESSID" == list[i].name) {
         return list[i].value.toString();

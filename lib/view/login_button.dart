@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 class LoginButton extends StatelessWidget {
   final double width;
   final double height;
-  Function() onTap;
+  final Function() onTap;
   final AnimationController animationController;
   final AnimationController successAnimationController;
   Animation<double> _width;
   Animation<double> _scale;
-  bool loginState = false;
+  final bool loginState;
 
   LoginButton(
       {@required this.onTap,

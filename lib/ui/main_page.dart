@@ -205,7 +205,7 @@ class GrowTransition extends StatelessWidget {
 }
 
 class StaggerAnimation extends StatelessWidget {
-  AnimationController _animationController;
+  final AnimationController _animationController;
   Animation<double> height;
   Animation<EdgeInsets> padding;
   Animation<Color> color;

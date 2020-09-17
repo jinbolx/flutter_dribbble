@@ -1,11 +1,13 @@
 library services;
+
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_dribbble/net/dio_util.dart';
 
 abstract class Service {
+  @protected
   final cancelToken = CancelToken();
-
+  @protected
   Dio dio = dioUtl.dio;
 
   @protected

@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dribbble/config/routes.dart';
-import 'package:flutter_dribbble/service/WeatherService.dart';
 import 'package:flutter_dribbble/view/switch_button.dart';
 
 class LoginPage extends StatelessWidget {

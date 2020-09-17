@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dribbble/net/cookieUtils.dart';
-import 'package:flutter_dribbble/ui/login_page.dart';
 import 'package:flutter_dribbble/weather/weather_page.dart';
 
 void main() {
